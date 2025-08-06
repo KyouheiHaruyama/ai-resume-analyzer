@@ -38,7 +38,6 @@ export async function convertPdfToImage(
         const viewport = page.getViewport({ scale: 4 });
         const canvas = document.createElement("canvas");
         const context = canvas.getContext("2d");
-
         canvas.width = viewport.width;
         canvas.height = viewport.height;
 
